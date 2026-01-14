@@ -1,0 +1,19 @@
+<% layout('layouts/boilerplate') %>
+<h1 class="mb-5">Blogposts</h1>
+<% for( blogpost of blogposts ) { %>
+
+<div class="card bg-secondary mb-3">
+<div class="row">
+<div class="col-md-12">
+    <div class="card-body">
+        <a class="text-decoration-none link-light" href="/blogpost/<%= blogpost._id %>"><h5 class="card-title"><%= blogpost.title %></h5>
+        <p class = "card-text"><%= blogpost.date %></p>
+        </a>
+    </div>
+</div>
+
+</div>
+</div>
+
+
+<% } %>

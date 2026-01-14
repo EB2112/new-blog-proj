@@ -1,0 +1,11 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="grid text-center">
+    <div class="row justify-content-center">
+<% for( fun of funs ) { %>
+    <div class="card col-3 m-3">
+        <a href="/fun/<%= fun._id %>" class="card-body text-decoration-none"> <%= fun.title %></a>
+        </div>
+<% } %>
+</div>
+</div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/stylesheets/incremental.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="uiDisplay">
+    <div id = 'controlsDisplay' >
+        <h1 id="scoreDisplay">
+            Engagement: 0
+        </h1>
+        <h3 id = "scoreRate">
+            Engagement per second: 0
+        </h3>
+        <button id="clickerButton" onclick="increment(1); scrollTerminal()">
+            Post Ragebait
+        </button>
+        <button class = "methodButton" id="schedulerButton" name="postScheduler" onclick="buyMethod(name)">
+            Buy Post Scheduler (10 Engagement)
+        </button>
+        <button class = "methodButton" id="twitterBotButton" name="twitterBot" onclick="buyMethod(name)">
+            Buy Twitter Bot (120 Engagement)
+        </button>
+         <button class = "methodButton" id="targetedAdsButton" name="targetedAds" onclick="buyMethod(name)">
+            Buy Targeted Ads (1500 Engagement)
+        </button>
+        <span class = "methodCount" id="schedulerCount">Copypastas: 0</span>
+        <span  class = "methodCount" id="twitterBotCount">Twitter Bots: 0</span>
+        <span  class = "methodCount" id="targetedAdsCount">Targeted Ads: 0</span>
+    </div>
+        <div id="terminalDisplay" class="vt323-regular"> 
+        <h1>THE CONTROL</h1>
+        <h3 class="blink">Sending inflammatory messages to victims...</h3>
+        <p id="line1">></p>
+        <p id="line2">></p>
+        <p id="line3">></p>
+        <p id="line4">></p>
+        <p id="line5">></p>
+        <p id="line6">></p>
+    </div>
+    
+    </div>
+    
+    
+</body>
+<script  src="/javascripts/incremental.js" defer></script>
+</html>

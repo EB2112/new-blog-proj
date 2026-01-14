@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/stylesheets/incremental.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="uiDisplay">
+    <div id = 'controlsDisplay' >
+        <div id="scores">
+         <h1 id="scoreDisplay">
+            Engagement: 0
+        </h1>
+        <h3 id = "scoreRate">
+            Engagement per second: 0
+        </h3>
+        </div>
+        <div id="clickerDiv">
+            <button id="clickerButton" onclick="increment(1); scrollTerminal()">
+            Post Ragebait
+        </button>
+        </div>
+        <div class="methodBuy methodButton" id="schedulerButton" data-method="postScheduler" >
+            <span>Post Scheduler</span>
+            <p>A cute little script that posts on social media during certain hours</p>
+            <span class="cost">100</span>
+            <span class = "methodCount" id="schedulerCount">0</span>
+        </div>
+        <div class="methodBuy methodButton" id="twitterBotButton" data-method="twitterBot">
+            <span>Twitter Bot</span>
+            <p>Automated Twitter bot capable of posting and replying</p>
+            <span class="cost">200</span>
+            <span  class = "methodCount" id="twitterBotCount">0</span>
+        </div>
+        <div class="methodBuy methodButton" id="targetedAdsButton" data-method="targetedAds">
+            <span>Targeted Ads</span>
+            <p>Ad campaigns focused on hyper-specific radicalizing topics</p>
+            <span class="cost">1500</span>
+            <span  class = "methodCount" id="targetedAdsCount">0</span>
+        </div>
+        <div class="methodBuy methodButton" id="aiSlopButton" data-method="aiSlop" >
+            <span>AI Slop Channel</span>
+            <p>Flood the internet with low-effort, AI generated slop</p>
+            <span class="cost">18000</span>
+            <span class="methodCount">0</span>
+        </div>
+        <div class="methodBuy methodButton" id="snarkerSubredditButton" data-method="snarkerSubreddit">
+            <span>Snarker Subreddit</span>
+            <p>Create Subreddits dedicated to anti-fans of popular creators</p>
+            <span class="cost">220000</span>
+            <span class="methodCount">0</span>
+        </div>
+        <!--
+        <button id="clickerButton" onclick="increment(1); scrollTerminal()">
+            Post Ragebait
+        </button>
+        <button class = "methodButton" id="schedulerButton" name="postScheduler" onclick="buyMethod(name)">
+            Buy Post Scheduler (10 Engagement)
+        </button>
+        <button class = "methodButton" id="twitterBotButton" name="twitterBot" onclick="buyMethod(name)">
+            Buy Twitter Bot (120 Engagement)
+        </button>
+         <button class = "methodButton" id="targetedAdsButton" name="targetedAds" onclick="buyMethod(name)">
+            Buy Targeted Ads (1500 Engagement)
+        </button>
+        <span class = "methodCount" id="schedulerCount">Copypastas: 0</span>
+        <span  class = "methodCount" id="twitterBotCount">Twitter Bots: 0</span>
+        <span  class = "methodCount" id="targetedAdsCount">Targeted Ads: 0</span> -->
+        <div class="methodSelect">
+
+        </div>
+
+    </div>
+    
+    <div id="right-screen">
+        <div id="terminalDisplay" class="vt323-regular"> 
+        <h1>THE CONTROL</h1>
+        <h3 class="blink">Sending inflammatory messages to victims...</h3>
+        <p class="terminalLine">></p>
+        <p class="terminalLine">></p>
+        <p class="terminalLine">></p>
+        <p class="terminalLine">></p>
+        <p class="terminalLine">></p>
+        <p class="terminalLine">></p>
+    </div>
+    </div>
+    </div>
+    
+    
+</body>
+<script  src="/javascripts/testing.js" defer></script>
+</html>

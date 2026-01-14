@@ -1,0 +1,18 @@
+<%layout('../views/layouts/boilerplate') %>
+
+<div class="text-center ">
+    <h1>Search Weather</h1>
+<div id = "result" class="mb-5">
+
+</div>
+
+<form  id = "weather">
+<input type="text" id="location" name="location" placeholder="Location" class="form-control mb-3" required>
+<select name="type" id="type">
+    <option value="current">Current</option>
+    <option value="forecast">Forecast</option>
+</select>
+<button type="submit" class="btn btn-success">Search</button>
+</form>
+</div>
+<script src="/javascripts/weather.js" defer></script>

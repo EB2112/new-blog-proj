@@ -1,0 +1,16 @@
+<% layout('layouts/boilerplate') %>
+
+<div>
+    <form action="/blogpost" method="POST">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="blogpost[title]" id="title" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="body" class="form-label">Body</label>
+            <textarea name="blogpost[body]" type="text" id="body" class="form-control" required></textarea>
+        </div>
+        
+        <button class="btn btn-success">Submit</button>
+    </form>
+</div>

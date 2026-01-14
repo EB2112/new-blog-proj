@@ -1,0 +1,14 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="text-start mb-5">
+        <h1><%= blogpost.title %></h1>
+        <h5><%= blogpost.date %></h4>
+        
+    </div>
+    <div>
+            <p> <%= blogpost.body %></p>
+        </div>
+        <form action="/blogpost/<%=blogpost._id %>?_method=DELETE" method="POST">
+            <button class="btn btn-danger m-1">Delete</button>
+        </form>
+

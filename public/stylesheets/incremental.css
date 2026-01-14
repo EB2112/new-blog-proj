@@ -1,0 +1,71 @@
+html{
+  background-color: #090040;
+  color: white;
+}
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.blink{
+  animation: blinker 1.5s linear infinite;
+}
+.methodBuy{
+  border: 1px solid blue;
+  min-height: 100px;
+  padding: 1px;
+  justify-content: center;
+background-color: #151515;
+color: white;
+}
+.methodCount{
+  float: right;
+  font-size: x-large;
+}
+.cost{
+  font-size: x-large;
+}
+#uiDisplay{
+    display: flex;
+    border: 1px solid red;
+}
+#controlsDisplay{
+border: 1px solid black;
+ min-height: 100vh ;
+ min-width: 50vw;
+}
+#terminalDisplay{
+border: 1px solid green;
+background-color: #151515;
+box-sizing: border-box;
+  width: 50vw;
+  height: 38vh;
+  margin: 0 auto;
+  padding: 5px;
+  color: white;
+}
+#right-screen{
+  display: flex;
+    border: 1px solid purple;
+    min-height: 100vh ;
+}
+#scores{
+text-align: center;
+}
+#clickerButton{
+  min-height: 25vh;
+}
+#clickerDiv{
+  display: flex;
+  justify-content: center;
+}
+.methodBuy:hover{
+background-color: #636363 ;
+transition: background-color 250ms linear;
+cursor: pointer;
+}
+@keyframes blinker {
+  50%{
+    opacity: 0;
+  }
+}
